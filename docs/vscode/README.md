@@ -24,4 +24,4 @@ The extension identifier is `StackBlender.openapi-guard`. The current package ta
 - [Release status](../release-status.md)
 - [Privacy](../privacy.md)
 
-The commands and settings in these pages were verified for version 0.1.0. Deeper contract checks described as planned in the [release status](../release-status.md) are not currently available.
+The commands and settings in these pages were verified for version 0.1.1. Deeper contract checks described as planned in the [release status](../release-status.md) are not currently available.

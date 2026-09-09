@@ -4,7 +4,7 @@ This page separates current product behavior from planned work. It was last revi
 
 | Product or capability                                                       | Status                                                                                                                                |
 | --------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------- |
-| OpenAPI Guard for VS Code                                                   | Version 0.1.0 released on [Visual Studio Marketplace](https://marketplace.visualstudio.com/items?itemName=StackBlender.openapi-guard) |
+| OpenAPI Guard for VS Code                                                   | Version 0.1.1 released on [Visual Studio Marketplace](https://marketplace.visualstudio.com/items?itemName=StackBlender.openapi-guard) |
 | Free endpoint-level drift checks                                            | Available in the released VS Code extension                                                                                           |
 | CLI                                                                         | Bundled with the VS Code extension; no standalone installer                                                                           |
 | Local MCP adapter                                                           | Bundled with the VS Code extension; no stable global executable path                                                                  |
@@ -13,6 +13,6 @@ This page separates current product behavior from planned work. It was last revi
 | Deeper parameter, body, DTO, schema, nullability, enum, and response checks | Planned; not currently available                                                                                                      |
 | Pro licensing and entitlement capabilities                                  | Planned; not currently available                                                                                                      |
 
-Version 0.1.0 was published on September 9, 2026. Before publication, the packaged VSIX passed automated endpoint-analyzer, VS Code diagnostics and navigation, CLI, agent-tool, and MCP protocol checks, plus an installed-VSIX user-interface smoke test.
+Version 0.1.1 was published on September 9, 2026. The packaged VSIX passed automated endpoint-analyzer, VS Code diagnostics and navigation, CLI, agent-tool, and MCP protocol checks. The initial 0.1.0 package also passed an installed-VSIX user-interface smoke test before publication.
 
 The released extension requires desktop VS Code 1.96.0 or later. Planned items above have no announced release date, pricing, or service commitment.

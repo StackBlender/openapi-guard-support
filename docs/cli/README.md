@@ -18,4 +18,4 @@ openapi-guard [workspace] [options]
 
 Exit code `0` means clean, `1` means contract drift, and `2` means analysis or configuration failed. JSON output uses a versioned report with `clean`, `drift`, or `error` status. In JSON mode, standard output is reserved for the machine-readable report.
 
-The interface above is included in version 0.1.0. The CLI performs analysis locally; see the [privacy overview](../privacy.md). For reproducible problems, use the [CLI/MCP bug form](https://github.com/StackBlender/openapi-guard-support/issues/new?template=cli-mcp-bug.yml).
+The interface above is included in the current release. The CLI performs analysis locally; see the [privacy overview](../privacy.md). For reproducible problems, use the [CLI/MCP bug form](https://github.com/StackBlender/openapi-guard-support/issues/new?template=cli-mcp-bug.yml).
