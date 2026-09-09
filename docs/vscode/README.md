@@ -1,6 +1,6 @@
 # OpenAPI Guard for VS Code
 
-> **Status: released.** Install [OpenAPI Guard by StackBlender](https://marketplace.visualstudio.com/items?itemName=StackBlender.openapi-guard) from Visual Studio Marketplace.
+> **Status: released.** Install [OpenAPI Guard](https://marketplace.visualstudio.com/items?itemName=StackBlender.openapi-guard) from Visual Studio Marketplace.
 
 OpenAPI Guard for VS Code compares OpenAPI 3.x operations with Spring Boot Java and Kotlin endpoints. Current Free analysis reports missing implementations, undocumented Spring endpoints, and HTTP method mismatches for matching routes.
 

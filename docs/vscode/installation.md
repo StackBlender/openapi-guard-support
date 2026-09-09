@@ -2,7 +2,7 @@
 
 OpenAPI Guard requires desktop VS Code 1.96.0 or later. Its extension identifier is `StackBlender.openapi-guard`.
 
-Install [OpenAPI Guard by StackBlender](https://marketplace.visualstudio.com/items?itemName=StackBlender.openapi-guard) from the Extensions view, or run:
+Install [OpenAPI Guard](https://marketplace.visualstudio.com/items?itemName=StackBlender.openapi-guard) from the Extensions view, or run:
 
 ```sh
 code --install-extension StackBlender.openapi-guard

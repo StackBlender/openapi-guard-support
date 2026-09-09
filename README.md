@@ -13,7 +13,7 @@ This is the public documentation, examples, feedback, and support repository. It
 | CLI                      | Bundled with the VS Code extension; no standalone installer                                                             | [CLI docs](docs/cli/README.md)                        | [CLI/MCP bug form](https://github.com/StackBlender/openapi-guard-support/issues/new?template=cli-mcp-bug.yml)         |
 | MCP adapter              | Bundled with the VS Code extension; no stable global path                                                               | [MCP docs](docs/mcp/README.md)                        | [CLI/MCP bug form](https://github.com/StackBlender/openapi-guard-support/issues/new?template=cli-mcp-bug.yml)         |
 
-Install [OpenAPI Guard by StackBlender](https://marketplace.visualstudio.com/items?itemName=StackBlender.openapi-guard) from Visual Studio Marketplace.
+Install [OpenAPI Guard](https://marketplace.visualstudio.com/items?itemName=StackBlender.openapi-guard) from Visual Studio Marketplace.
 
 ## Current Free checks
 
