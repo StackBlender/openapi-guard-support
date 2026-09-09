@@ -10,6 +10,10 @@ Analysis runs automatically in the local workspace. Results appear as diagnostic
 
 The screenshot shows the current Free analyzer reporting a method mismatch, a missing Spring implementation, and an undocumented Spring endpoint.
 
+![OpenAPI Guard navigating from a Spring mapping to its OpenAPI operation with VS Code Peek Definition](openapi-guard-navigation.png)
+
+OpenAPI Guard participates in VS Code's standard definition workflow, including F12, Ctrl/Cmd+click, and Peek Definition.
+
 The extension identifier is `stackblender.stackblender-openapi-guard`. The current package targets desktop VS Code 1.96.0 and later. It is not yet available from Marketplace search.
 
 ## Documentation
