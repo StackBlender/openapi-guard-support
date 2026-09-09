@@ -1,0 +1,107 @@
+name: CLI or MCP bug
+description: Report a reproducible problem with a pre-launch local integration.
+title: "[CLI/MCP]: "
+labels:
+  - "type:bug"
+  - "needs:reproduction"
+body:
+  - type: markdown
+    attributes:
+      value: |
+        The CLI and MCP adapter are pre-launch and bundled with the VS Code extension. Do not use this public form for security, billing, or license issues. Submit only sanitized material.
+  - type: dropdown
+    id: surface
+    attributes:
+      label: Affected surface
+      options:
+        - CLI
+        - MCP adapter
+        - Both or unknown
+    validations:
+      required: true
+  - type: input
+    id: guard-version
+    attributes:
+      label: OpenAPI Guard version
+      placeholder: e.g. 0.0.0
+    validations:
+      required: true
+  - type: input
+    id: host-version
+    attributes:
+      label: Host or client name and version
+      description: For MCP, identify the client. For CLI-only use, enter the shell or host; enter “Not relevant” if needed.
+    validations:
+      required: true
+  - type: input
+    id: os
+    attributes:
+      label: Operating system
+    validations:
+      required: true
+  - type: input
+    id: language-version
+    attributes:
+      label: Java or Kotlin version
+      description: Enter “Not relevant” if the problem occurs before project analysis.
+    validations:
+      required: true
+  - type: input
+    id: spring-version
+    attributes:
+      label: Spring Boot version
+      description: Enter “Not relevant” if the problem occurs before project analysis.
+    validations:
+      required: true
+  - type: dropdown
+    id: edition
+    attributes:
+      label: Product context
+      description: Do not provide a license key.
+      options:
+        - Free
+        - Pro or entitlement-related
+        - Unknown or not applicable
+    validations:
+      required: true
+  - type: textarea
+    id: expected
+    attributes:
+      label: Expected behavior
+    validations:
+      required: true
+  - type: textarea
+    id: actual
+    attributes:
+      label: Actual behavior
+    validations:
+      required: true
+  - type: textarea
+    id: reproduction
+    attributes:
+      label: Minimal reproduction steps
+    validations:
+      required: true
+  - type: textarea
+    id: sample
+    attributes:
+      label: Sanitized OpenAPI and controller sample
+      description: Paste a minimal sanitized sample or link to an intentionally public reproduction repository.
+      render: text
+    validations:
+      required: false
+  - type: textarea
+    id: logs
+    attributes:
+      label: Relevant sanitized logs
+      render: text
+    validations:
+      required: false
+  - type: checkboxes
+    id: safe-content
+    attributes:
+      label: Public-content confirmation
+      options:
+        - label: I confirm this submission contains no secrets, license keys, credentials, proprietary source, private API definitions, personal/customer data, or sensitive logs.
+          required: true
+

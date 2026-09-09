@@ -1,0 +1,40 @@
+name: IntelliJ Platform interest
+description: Share interest or requirements for the planned IntelliJ Platform plugin.
+title: "[IntelliJ interest]: "
+labels:
+  - "product:intellij"
+  - "type:feature"
+body:
+  - type: markdown
+    attributes:
+      value: |
+        The IntelliJ Platform plugin is planned and has not been released. This is an interest and workflow form, not a bug report. Do not include private project material.
+  - type: input
+    id: ide
+    attributes:
+      label: IntelliJ Platform IDE and version
+      description: Tell us which IDE you would like a future plugin to support.
+    validations:
+      required: true
+  - type: textarea
+    id: workflow
+    attributes:
+      label: Desired workflow
+      description: Describe the OpenAPI and Spring workflow you want supported.
+    validations:
+      required: true
+  - type: textarea
+    id: value
+    attributes:
+      label: Expected value
+      description: Explain the problem this planned integration would solve.
+    validations:
+      required: true
+  - type: checkboxes
+    id: safe-content
+    attributes:
+      label: Public-content confirmation
+      options:
+        - label: I confirm this submission contains no secrets, license keys, credentials, proprietary source, private API definitions, personal/customer data, or sensitive logs.
+          required: true
+

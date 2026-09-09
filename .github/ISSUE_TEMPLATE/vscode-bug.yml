@@ -1,0 +1,117 @@
+name: VS Code bug
+description: Report a reproducible problem with the pre-launch VS Code extension.
+title: "[VS Code]: "
+labels:
+  - "product:vscode"
+  - "type:bug"
+  - "needs:reproduction"
+body:
+  - type: markdown
+    attributes:
+      value: |
+        OpenAPI Guard for VS Code is pre-launch. Do not use this public form for security, billing, or license issues. Submit only sanitized material.
+  - type: input
+    id: guard-version
+    attributes:
+      label: OpenAPI Guard version
+      description: Copy the version from the installed extension package.
+      placeholder: e.g. 0.0.0
+    validations:
+      required: true
+  - type: dropdown
+    id: surface
+    attributes:
+      label: Affected VS Code surface
+      options:
+        - Diagnostics or analysis
+        - Navigation
+        - Configuration or file discovery
+        - Bundled CLI
+        - Agent tool
+        - Extension activation or other
+    validations:
+      required: true
+  - type: input
+    id: ide-version
+    attributes:
+      label: VS Code name and version
+      placeholder: e.g. Visual Studio Code 0.0.0
+    validations:
+      required: true
+  - type: input
+    id: os
+    attributes:
+      label: Operating system
+      placeholder: e.g. Windows 11, macOS, or Ubuntu
+    validations:
+      required: true
+  - type: input
+    id: language-version
+    attributes:
+      label: Java or Kotlin version
+      description: Enter “Not relevant” if the problem occurs before project analysis.
+    validations:
+      required: true
+  - type: input
+    id: spring-version
+    attributes:
+      label: Spring Boot version
+      description: Enter “Not relevant” if the problem occurs before project analysis.
+    validations:
+      required: true
+  - type: dropdown
+    id: edition
+    attributes:
+      label: Product context
+      description: Do not provide a license key.
+      options:
+        - Free
+        - Pro or entitlement-related
+        - Unknown or not applicable
+    validations:
+      required: true
+  - type: textarea
+    id: expected
+    attributes:
+      label: Expected behavior
+    validations:
+      required: true
+  - type: textarea
+    id: actual
+    attributes:
+      label: Actual behavior
+    validations:
+      required: true
+  - type: textarea
+    id: reproduction
+    attributes:
+      label: Minimal reproduction steps
+      placeholder: |
+        1. Open ...
+        2. Run ...
+        3. Observe ...
+    validations:
+      required: true
+  - type: textarea
+    id: sample
+    attributes:
+      label: Sanitized OpenAPI and controller sample
+      description: Paste a minimal sanitized sample or link to an intentionally public reproduction repository.
+      render: text
+    validations:
+      required: false
+  - type: textarea
+    id: logs
+    attributes:
+      label: Relevant sanitized logs
+      description: Include only the smallest relevant excerpt.
+      render: text
+    validations:
+      required: false
+  - type: checkboxes
+    id: safe-content
+    attributes:
+      label: Public-content confirmation
+      options:
+        - label: I confirm this submission contains no secrets, license keys, credentials, proprietary source, private API definitions, personal/customer data, or sensitive logs.
+          required: true

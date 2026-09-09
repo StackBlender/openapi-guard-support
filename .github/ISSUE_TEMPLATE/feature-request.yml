@@ -1,0 +1,48 @@
+name: Feature or documentation request
+description: Suggest a public product, integration, example, or documentation improvement.
+title: "[Feature]: "
+labels:
+  - "type:feature"
+body:
+  - type: dropdown
+    id: area
+    attributes:
+      label: Area
+      options:
+        - VS Code extension
+        - IntelliJ Platform plugin (planned)
+        - CLI
+        - MCP adapter
+        - Documentation
+        - Examples
+        - Other integration
+    validations:
+      required: true
+  - type: textarea
+    id: problem
+    attributes:
+      label: Problem or use case
+      description: Describe the workflow and need without including private project material.
+    validations:
+      required: true
+  - type: textarea
+    id: proposal
+    attributes:
+      label: Suggested outcome
+      description: Explain what a useful result would look like. A request does not imply a roadmap commitment.
+    validations:
+      required: true
+  - type: textarea
+    id: alternatives
+    attributes:
+      label: Alternatives considered
+    validations:
+      required: false
+  - type: checkboxes
+    id: safe-content
+    attributes:
+      label: Public-content confirmation
+      options:
+        - label: I confirm this submission contains no secrets, license keys, credentials, proprietary source, private API definitions, personal/customer data, or sensitive logs.
+          required: true
+
