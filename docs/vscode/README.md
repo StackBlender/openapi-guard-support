@@ -6,6 +6,10 @@ OpenAPI Guard for VS Code compares OpenAPI 3.x operations with Spring Boot Java 
 
 Analysis runs automatically in the local workspace. Results appear as diagnostics and support navigation between related OpenAPI operations and Spring handlers. The pre-launch package also bundles a local [CLI](../cli/README.md), VS Code agent tool, and [MCP adapter](../mcp/README.md).
 
+![OpenAPI Guard showing a Spring HTTP method mismatch and three endpoint contract issues in the VS Code Problems panel](openapi-guard-diagnostics.png)
+
+The screenshot shows the current Free analyzer reporting a method mismatch, a missing Spring implementation, and an undocumented Spring endpoint.
+
 The extension identifier is `stackblender.stackblender-openapi-guard`. The current package targets desktop VS Code 1.96.0 and later. It is not yet available from Marketplace search.
 
 ## Documentation
