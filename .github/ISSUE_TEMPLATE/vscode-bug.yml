@@ -1,5 +1,5 @@
 name: VS Code bug
-description: Report a reproducible problem with the pre-launch VS Code extension.
+description: Report a reproducible problem with the VS Code extension.
 title: "[VS Code]: "
 labels:
   - "product:vscode"
@@ -9,7 +9,7 @@ body:
   - type: markdown
     attributes:
       value: |
-        OpenAPI Guard for VS Code is pre-launch. Do not use this public form for security, billing, or license issues. Submit only sanitized material.
+        Do not use this public form for security, billing, or license issues. Submit only sanitized material.
   - type: input
     id: guard-version
     attributes:

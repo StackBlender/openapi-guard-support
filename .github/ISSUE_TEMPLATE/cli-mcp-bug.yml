@@ -1,5 +1,5 @@
 name: CLI or MCP bug
-description: Report a reproducible problem with a pre-launch local integration.
+description: Report a reproducible problem with a bundled local integration.
 title: "[CLI/MCP]: "
 labels:
   - "type:bug"
@@ -8,7 +8,7 @@ body:
   - type: markdown
     attributes:
       value: |
-        The CLI and MCP adapter are pre-launch and bundled with the VS Code extension. Do not use this public form for security, billing, or license issues. Submit only sanitized material.
+        The CLI and MCP adapter are bundled with the VS Code extension. Do not use this public form for security, billing, or license issues. Submit only sanitized material.
   - type: dropdown
     id: surface
     attributes:
@@ -104,4 +104,3 @@ body:
       options:
         - label: I confirm this submission contains no secrets, license keys, credentials, proprietary source, private API definitions, personal/customer data, or sensitive logs.
           required: true
-

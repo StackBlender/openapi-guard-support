@@ -1,7 +1,5 @@
 # VS Code configuration and behavior
 
-> **Pre-launch:** These settings and commands are verified, but the package is not yet publicly distributed.
-
 Current Free behavior compares OpenAPI 3.x operations with Spring Boot Java and Kotlin request mappings and reports:
 
 - a contract operation without a Spring handler;
@@ -21,16 +19,16 @@ Navigation is also available through editor context menus and standard Go to Def
 
 ## Settings
 
-| Setting | Type | Default | Purpose |
-| --- | --- | --- | --- |
-| `stackblender.openApiGuard.enabled` | boolean | `true` | Enable local contract analysis |
-| `stackblender.openApiGuard.spec` | string | empty | Workspace-relative OpenAPI specification; empty uses discovery |
-| `stackblender.openApiGuard.severity` | string | `warning` | `error`, `warning`, or `information` |
-| `stackblender.openApiGuard.include` | string array | `**/*.java`, `**/*.kt` | Source files eligible for analysis |
-| `stackblender.openApiGuard.exclude` | string array | build, target, and node_modules globs | Source files excluded from analysis |
+| Setting                              | Type         | Default                               | Purpose                                                        |
+| ------------------------------------ | ------------ | ------------------------------------- | -------------------------------------------------------------- |
+| `stackblender.openApiGuard.enabled`  | boolean      | `true`                                | Enable local contract analysis                                 |
+| `stackblender.openApiGuard.spec`     | string       | empty                                 | Workspace-relative OpenAPI specification; empty uses discovery |
+| `stackblender.openApiGuard.severity` | string       | `warning`                             | `error`, `warning`, or `information`                           |
+| `stackblender.openApiGuard.include`  | string array | `**/*.java`, `**/*.kt`                | Source files eligible for analysis                             |
+| `stackblender.openApiGuard.exclude`  | string array | build, target, and node_modules globs | Source files excluded from analysis                            |
 
 Automatic discovery recognizes `openapi.yaml`, `openapi.yml`, `openapi.json`, `swagger.yaml`, `swagger.yml`, and `swagger.json`. Use **Select OpenAPI Specification** when a workspace has multiple candidates or a different filename.
 
 Deeper parameter, request/response body, DTO, schema, nullability, enum, and response checks are planned and should not be expected from the current Free analyzer. Computed Spring mapping paths are skipped instead of guessed.
 
-The bundled CLI, agent tool, and MCP adapter are pre-launch integrations. See the [CLI](../cli/README.md) and [MCP](../mcp/README.md) pages for their current documentation boundaries.
+The bundled CLI, agent tool, and MCP adapter are available with the extension. See the [CLI](../cli/README.md) and [MCP](../mcp/README.md) pages for their current distribution boundaries.

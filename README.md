@@ -6,14 +6,14 @@ This is the public documentation, examples, feedback, and support repository. It
 
 ## Product status
 
-| Product | Status | Documentation | Issues |
-| --- | --- | --- | --- |
-| VS Code extension | Pre-launch | [VS Code docs](docs/vscode/README.md) | [VS Code bug form](https://github.com/StackBlender/openapi-guard-support/issues/new?template=vscode-bug.yml) |
-| IntelliJ Platform plugin | Planned | [IntelliJ Platform overview](docs/intellij/README.md) | [Feature request form](https://github.com/StackBlender/openapi-guard-support/issues/new?template=feature-request.yml) |
-| CLI | Bundled with the pre-launch VS Code extension | [CLI docs](docs/cli/README.md) | [CLI/MCP bug form](https://github.com/StackBlender/openapi-guard-support/issues/new?template=cli-mcp-bug.yml) |
-| MCP adapter | Bundled with the pre-launch VS Code extension | [MCP docs](docs/mcp/README.md) | [CLI/MCP bug form](https://github.com/StackBlender/openapi-guard-support/issues/new?template=cli-mcp-bug.yml) |
+| Product                  | Status                                                                                                                  | Documentation                                         | Issues                                                                                                                |
+| ------------------------ | ----------------------------------------------------------------------------------------------------------------------- | ----------------------------------------------------- | --------------------------------------------------------------------------------------------------------------------- |
+| VS Code extension        | [Released on Visual Studio Marketplace](https://marketplace.visualstudio.com/items?itemName=StackBlender.openapi-guard) | [VS Code docs](docs/vscode/README.md)                 | [VS Code bug form](https://github.com/StackBlender/openapi-guard-support/issues/new?template=vscode-bug.yml)          |
+| IntelliJ Platform plugin | Planned                                                                                                                 | [IntelliJ Platform overview](docs/intellij/README.md) | [Feature request form](https://github.com/StackBlender/openapi-guard-support/issues/new?template=feature-request.yml) |
+| CLI                      | Bundled with the VS Code extension; no standalone installer                                                             | [CLI docs](docs/cli/README.md)                        | [CLI/MCP bug form](https://github.com/StackBlender/openapi-guard-support/issues/new?template=cli-mcp-bug.yml)         |
+| MCP adapter              | Bundled with the VS Code extension; no stable global path                                                               | [MCP docs](docs/mcp/README.md)                        | [CLI/MCP bug form](https://github.com/StackBlender/openapi-guard-support/issues/new?template=cli-mcp-bug.yml)         |
 
-> **Pre-launch links:** The confirmed VS Code Marketplace and product-page URLs will be added before release.
+Install [OpenAPI Guard by StackBlender](https://marketplace.visualstudio.com/items?itemName=StackBlender.openapi-guard) from Visual Studio Marketplace.
 
 ## Current Free checks
 

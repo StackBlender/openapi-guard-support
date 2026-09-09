@@ -1,6 +1,6 @@
 # OpenAPI Guard MCP adapter
 
-> **Status: pre-launch; bundled with the VS Code extension.**
+> **Status: bundled with the released VS Code extension; no stable global executable path.**
 
 The MCP adapter is a local child process that communicates over standard input and output. It is not a hosted REST service, and it does not require uploading a repository for Free analysis.
 
@@ -17,6 +17,6 @@ The server exposes one read-only tool named `check_openapi_contract`. It accepts
 
 Installing the VSIX does not create a stable global executable path. Client-specific configuration examples will be added only after their current formats and the public distribution path are verified.
 
-Keep standard output reserved for protocol messages when integrating a stdio MCP process. Process logs and errors belong on standard error, subject to the final released behavior.
+Keep standard output reserved for protocol messages when integrating a stdio MCP process. Process logs and errors belong on standard error.
 
 See [privacy](../privacy.md) for the scope of local-first analysis. Report reproducible adapter problems with the [CLI/MCP bug form](https://github.com/StackBlender/openapi-guard-support/issues/new?template=cli-mcp-bug.yml), using only sanitized content.

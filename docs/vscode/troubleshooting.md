@@ -1,6 +1,6 @@
 # VS Code troubleshooting
 
-OpenAPI Guard for VS Code is pre-launch. The commands and settings below are verified against the current package.
+The commands and settings below apply to the current Marketplace release.
 
 ## No diagnostics appear
 
