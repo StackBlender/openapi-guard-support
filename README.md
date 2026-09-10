@@ -1,6 +1,7 @@
 # StackBlender OpenAPI Guard
 
-OpenAPI Guard keeps OpenAPI contracts synchronized with Spring Boot Java and Kotlin implementations by reporting endpoint-level drift.
+OpenAPI Guard keeps OpenAPI contracts synchronized with Spring Boot Java/Kotlin
+and NestJS TypeScript implementations by reporting endpoint-level drift.
 
 This is the public documentation, examples, feedback, and support repository. It is not the source repository for the separately licensed, proprietary OpenAPI Guard products.
 
@@ -15,17 +16,17 @@ This is the public documentation, examples, feedback, and support repository. It
 
 Install [OpenAPI Guard](https://marketplace.visualstudio.com/items?itemName=StackBlender.openapi-guard) from Visual Studio Marketplace.
 
-## Current Free checks
+## Current checks
 
-OpenAPI Guard's current Free endpoint-level analysis detects:
+OpenAPI Guard's endpoint-level analysis detects:
 
-- OpenAPI operations with no Spring implementation
-- Spring endpoints absent from the OpenAPI contract
+- OpenAPI operations with no supported implementation
+- Spring or NestJS endpoints absent from the OpenAPI contract
 - HTTP method mismatches for otherwise matching routes
 
-Parameter, body, DTO, schema, nullability, enum, response, licensing, and entitlement checks are planned work and are not currently available.
-
-Free analysis is local-first. OpenAPI Guard does not upload source code, OpenAPI specifications, diagnostics, or repository metadata for analysis. See the [privacy overview](docs/privacy.md) for the precise scope of this statement.
+Analysis is local-first. OpenAPI Guard does not upload source code, OpenAPI
+specifications, diagnostics, or repository metadata for analysis. See the
+[privacy overview](docs/privacy.md) for details.
 
 ## Start here
 
