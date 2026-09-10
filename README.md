@@ -11,10 +11,16 @@ This is the public documentation, examples, feedback, and support repository. It
 | ------------------------ | ----------------------------------------------------------------------------------------------------------------------- | ----------------------------------------------------- | --------------------------------------------------------------------------------------------------------------------- |
 | VS Code extension        | [Released on Visual Studio Marketplace](https://marketplace.visualstudio.com/items?itemName=StackBlender.openapi-guard) | [VS Code docs](docs/vscode/README.md)                 | [VS Code bug form](https://github.com/StackBlender/openapi-guard-support/issues/new?template=vscode-bug.yml)          |
 | IntelliJ Platform plugin | In development; not released                                                                                            | [IntelliJ Platform overview](docs/intellij/README.md) | [Feature request form](https://github.com/StackBlender/openapi-guard-support/issues/new?template=feature-request.yml) |
-| CLI                      | Bundled with the VS Code extension; no standalone installer                                                             | [CLI docs](docs/cli/README.md)                        | [CLI/MCP bug form](https://github.com/StackBlender/openapi-guard-support/issues/new?template=cli-mcp-bug.yml)         |
-| MCP adapter              | Bundled with the VS Code extension; no stable global path                                                               | [MCP docs](docs/mcp/README.md)                        | [CLI/MCP bug form](https://github.com/StackBlender/openapi-guard-support/issues/new?template=cli-mcp-bug.yml)         |
+| CLI                      | [Version 0.2.0 released on npm](https://www.npmjs.com/package/@stackblender/openapi-guard)                               | [CLI docs](docs/cli/README.md)                        | [CLI/MCP bug form](https://github.com/StackBlender/openapi-guard-support/issues/new?template=cli-mcp-bug.yml)         |
+| MCP adapter              | Included in the [public npm package](https://www.npmjs.com/package/@stackblender/openapi-guard)                          | [MCP docs](docs/mcp/README.md)                        | [CLI/MCP bug form](https://github.com/StackBlender/openapi-guard-support/issues/new?template=cli-mcp-bug.yml)         |
 
 Install [OpenAPI Guard](https://marketplace.visualstudio.com/items?itemName=StackBlender.openapi-guard) from Visual Studio Marketplace.
+
+Run the CLI without installing it globally:
+
+```sh
+npx --yes @stackblender/openapi-guard@0.2.0 .
+```
 
 ## Current checks
 
