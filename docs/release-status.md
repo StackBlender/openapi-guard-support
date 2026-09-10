@@ -9,7 +9,7 @@ This page separates current product behavior from planned work. It was last revi
 | CLI                                                                         | Bundled with the VS Code extension; no standalone installer                                                                           |
 | Local MCP adapter                                                           | Bundled with the VS Code extension; no stable global executable path                                                                  |
 | VS Code agent tool                                                          | Included in the released VS Code extension                                                                                            |
-| IntelliJ Platform plugin                                                    | Planned; not released                                                                                                                 |
+| IntelliJ Platform plugin                                                    | In development; not released                                                                                                          |
 | Deeper parameter, body, DTO, schema, nullability, enum, and response checks | Planned; not currently available                                                                                                      |
 | Pro licensing and entitlement capabilities                                  | Planned; not currently available                                                                                                      |
 
