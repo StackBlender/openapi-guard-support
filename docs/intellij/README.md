@@ -10,6 +10,10 @@ endpoints the specification does not document, and HTTP methods that disagree. I
 understands spec-first projects built with openapi-generator, including interface
 and delegate styles.
 
+The full user guide (inspections, quick fixes, the Operations tool window, path
+completion, and settings) is at
+[stackblender.com/openapiguard/docs/intellij](https://stackblender.com/openapiguard/docs/intellij).
+
 Works in IntelliJ IDEA Community and Ultimate, 2024.1 and later. Supports OpenAPI 3.x;
 Swagger 2.0 is not supported. NestJS support is available in the VS Code extension and
 the CLI, not in this plugin.
