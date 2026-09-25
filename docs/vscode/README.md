@@ -59,4 +59,4 @@ targets desktop VS Code 1.96.0 and later.
 - [Release status](../release-status.md)
 - [Privacy](../privacy.md)
 
-The commands and settings in these pages were verified for version 0.3.0.
+The commands and settings in these pages were verified for version 0.3.2.
