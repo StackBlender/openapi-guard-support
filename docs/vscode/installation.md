@@ -13,7 +13,11 @@ After installation:
 1. Open a Spring Boot Java/Kotlin or NestJS TypeScript workspace containing an
    OpenAPI 3.x document.
 2. Allow automatic analysis to run, or invoke **OpenAPI Guard: Analyze Current File**.
-3. Open the Problems panel to review endpoint drift.
-4. Use Go to Definition or the OpenAPI Guard navigation commands to move between the contract and implementation.
+3. Read the first-run summary, then open the Problems panel to review endpoint drift,
+   or the **Operations** view in the OpenAPI Guard panel to see every operation's
+   status.
+4. Press Ctrl/Cmd+. on a diagnostic for quick fixes, and use CodeLens, Go to
+   Definition, or the OpenAPI Guard navigation commands to move between the contract
+   and implementation.
 
 Continue with [configuration](configuration.md), or consult [troubleshooting](troubleshooting.md).
