@@ -1,19 +1,19 @@
 # OpenAPI Guard CLI
 
-> **Status: version 0.2.0 is available from [npm](https://www.npmjs.com/package/@stackblender/openapi-guard).**
+> **Status: version 0.3.2 is available from [npm](https://www.npmjs.com/package/@stackblender/openapi-guard).**
 
 The local `openapi-guard` CLI provides the same Spring Java/Kotlin and NestJS
 TypeScript endpoint analysis outside the editor. Run the published package from a
 project containing an OpenAPI document and supported implementation sources:
 
 ```sh
-npx --yes @stackblender/openapi-guard@0.2.0 .
+npx --yes @stackblender/openapi-guard@0.3.2 .
 ```
 
 For a repeatable project dependency, install and expose it through an npm script:
 
 ```sh
-npm install --save-dev @stackblender/openapi-guard@0.2.0
+npm install --save-dev @stackblender/openapi-guard@0.3.2
 ```
 
 ```json
