@@ -1,28 +1,47 @@
 # OpenAPI Guard for IntelliJ Platform
 
-> **Status: in development, not released.** No download, installation path, or
-> release date is available yet.
+> **Status: released.** Install [OpenAPI Guard](https://plugins.jetbrains.com/plugin/34193-openapi-guard)
+> from JetBrains Marketplace, or from inside the IDE under Settings, Plugins, Marketplace.
+> The current version is 0.3.0. The plugin identifier is `com.stackblender.openapiguard`.
 
-An IntelliJ Platform plugin for OpenAPI Guard is in active development. The intended
-first release brings the same Free analysis as the VS Code extension to IntelliJ
-IDEA: endpoint-level drift detection between an OpenAPI 3.x contract and Spring Boot
-Java/Kotlin controllers, surfaced as native diagnostics with bidirectional
-navigation.
+OpenAPI Guard for IntelliJ IDEA compares a local OpenAPI 3.x specification with your
+Spring MVC controllers in Java and Kotlin. It flags operations nobody implemented,
+endpoints the specification does not document, and HTTP methods that disagree. It
+understands spec-first projects built with openapi-generator, including interface
+and delegate styles.
 
-Planned targets and scope (subject to change until release):
+Works in IntelliJ IDEA Community and Ultimate, 2024.1 and later. Supports OpenAPI 3.x;
+Swagger 2.0 is not supported. NestJS support is available in the VS Code extension and
+the CLI, not in this plugin.
 
-- IntelliJ IDEA Community and Ultimate.
-- Java and Kotlin Spring Boot controllers.
-- Free endpoint drift checks: missing implementations, undocumented Spring
-  endpoints, and HTTP method mismatches, matching the VS Code Free behavior.
-- Local-first analysis with no required network traffic.
+## What it does
 
-Supported IDE versions, capabilities, distribution links, and a release date are not
-yet confirmed. Deeper parameter, body, schema, and response checks are planned work
-and are not part of the initial Free scope.
+- **Drift inspections** on both the controller and the specification, with per-rule
+  severity, `@SuppressWarnings` / `@Suppress`, and Code | Inspect Code.
+- **Quick fixes**: add an undocumented endpoint to a YAML specification, implement a
+  missing operation in the best-matching controller, or align the HTTP method on
+  either side.
+- **Operations tool window**: every operation's status (implemented, missing,
+  mismatched, undocumented), with search, a problems-only filter, and Copy as Markdown
+  for pull requests and reviews.
+- **Path completion** from the specification inside `@GetMapping`, `@RequestMapping`,
+  and the other mapping annotations.
+- **Navigation both ways**: gutter icons and Go to Declaration between mappings and
+  operations.
+- **Specification discovery** by content, with support for several specifications per
+  project or explicitly configured paths.
 
-To express interest or describe a desired workflow, use the [feature request form](../../.github/ISSUE_TEMPLATE/feature-request.yml)
-and select "IntelliJ Platform plugin." Do not file a bug report for a product that is
-not yet available.
+## Privacy
 
-Follow [release status](../release-status.md) for confirmed changes.
+Analysis runs entirely on your machine. The plugin never uploads source code,
+specifications, or diagnostics, and needs no account or network access. See the
+[privacy overview](../privacy.md).
+
+## Support
+
+Report a reproducible problem with the
+[IntelliJ bug form](https://github.com/StackBlender/openapi-guard-support/issues/new?template=intellij-bug.yml),
+or use the
+[feature request form](https://github.com/StackBlender/openapi-guard-support/issues/new?template=feature-request.yml).
+Release history is on the [marketplace page](https://plugins.jetbrains.com/plugin/34193-openapi-guard/versions)
+and summarized in [release status](../release-status.md).

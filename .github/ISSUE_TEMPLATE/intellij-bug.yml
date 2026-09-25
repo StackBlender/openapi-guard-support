@@ -1,35 +1,103 @@
-name: IntelliJ Platform interest
-description: Share interest or requirements for the planned IntelliJ Platform plugin.
-title: "[IntelliJ interest]: "
+name: IntelliJ Platform bug
+description: Report a reproducible problem with the IntelliJ Platform plugin.
+title: "[IntelliJ]: "
 labels:
   - "product:intellij"
-  - "type:feature"
+  - "type:bug"
+  - "needs:reproduction"
 body:
   - type: markdown
     attributes:
       value: |
-        The IntelliJ Platform plugin is planned and has not been released. This is an interest and workflow form, not a bug report. Do not include private project material.
+        Do not use this public form for security, billing, or license issues. Submit only sanitized material.
   - type: input
-    id: ide
+    id: guard-version
     attributes:
-      label: IntelliJ Platform IDE and version
-      description: Tell us which IDE you would like a future plugin to support.
+      label: OpenAPI Guard plugin version
+      description: Copy the version from Settings, Plugins, Installed.
+      placeholder: e.g. 0.3.0
+    validations:
+      required: true
+  - type: dropdown
+    id: surface
+    attributes:
+      label: Affected plugin surface
+      options:
+        - Inspections or analysis
+        - Quick fixes
+        - Operations tool window
+        - Path completion
+        - Navigation or gutter icons
+        - Specification discovery or settings
+        - Plugin loading or other
+    validations:
+      required: true
+  - type: input
+    id: ide-version
+    attributes:
+      label: IDE name, edition, and version
+      placeholder: e.g. IntelliJ IDEA Ultimate 2025.2.1
+    validations:
+      required: true
+  - type: input
+    id: os
+    attributes:
+      label: Operating system
+      placeholder: e.g. Windows 11, macOS, or Ubuntu
+    validations:
+      required: true
+  - type: input
+    id: language-version
+    attributes:
+      label: Java or Kotlin version
+      description: Enter “Not relevant” if the problem occurs before project analysis.
+    validations:
+      required: true
+  - type: input
+    id: spring-version
+    attributes:
+      label: Spring Boot version
+      description: Enter “Not relevant” if the problem occurs before project analysis.
     validations:
       required: true
   - type: textarea
-    id: workflow
+    id: expected
     attributes:
-      label: Desired workflow
-      description: Describe the OpenAPI and Spring workflow you want supported.
+      label: Expected behavior
     validations:
       required: true
   - type: textarea
-    id: value
+    id: actual
     attributes:
-      label: Expected value
-      description: Explain the problem this planned integration would solve.
+      label: Actual behavior
     validations:
       required: true
+  - type: textarea
+    id: reproduction
+    attributes:
+      label: Minimal reproduction steps
+      placeholder: |
+        1. Open ...
+        2. Run ...
+        3. Observe ...
+    validations:
+      required: true
+  - type: textarea
+    id: sample
+    attributes:
+      label: Sanitized OpenAPI and controller sample
+      description: Paste a minimal sanitized sample or link to an intentionally public reproduction repository.
+      render: text
+    validations:
+      required: false
+  - type: textarea
+    id: logs
+    attributes:
+      label: Relevant sanitized logs
+      description: Include only the smallest relevant excerpt from Help, Show Log.
+      render: text
+    validations:
+      required: false
   - type: checkboxes
     id: safe-content
     attributes:
@@ -37,4 +105,3 @@ body:
       options:
         - label: I confirm this submission contains no secrets, license keys, credentials, proprietary source, private API definitions, personal/customer data, or sensitive logs.
           required: true
-

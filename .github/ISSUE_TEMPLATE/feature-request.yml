@@ -10,7 +10,7 @@ body:
       label: Area
       options:
         - VS Code extension
-        - IntelliJ Platform plugin (planned)
+        - IntelliJ Platform plugin
         - CLI
         - MCP adapter
         - Documentation
