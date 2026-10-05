@@ -1,9 +1,9 @@
 # OpenAPI Guard MCP adapter
 
-> **Status: version 0.3.2 is available from [npm](https://www.npmjs.com/package/@stackblender/openapi-guard).**
+> **Status: version 0.4.1 is available from [npm](https://www.npmjs.com/package/@stackblender/openapi-guard).**
 
 The MCP adapter is a local child process that communicates over standard input and
-output. It analyzes supported Spring Java/Kotlin and NestJS TypeScript projects,
+output. It analyzes supported Spring Java/Kotlin, NestJS, Express, and AWS Lambda projects,
 is not a hosted REST service, and does not require uploading a repository.
 
 Configure a compatible client to launch a pinned npm package version, set the
@@ -12,7 +12,7 @@ standard-input/output transport:
 
 ```text
 command: npx
-arguments: --yes --package=@stackblender/openapi-guard@0.3.2 openapi-guard-mcp
+arguments: --yes --package=@stackblender/openapi-guard@0.4.1 openapi-guard-mcp
 working directory: /absolute/path/to/project
 transport: stdio
 ```

@@ -3,7 +3,8 @@
 > **Status: released.** Install [OpenAPI Guard](https://marketplace.visualstudio.com/items?itemName=StackBlender.openapi-guard) from Visual Studio Marketplace.
 
 OpenAPI Guard for VS Code compares OpenAPI 3.x operations with Spring Boot
-Java/Kotlin and NestJS TypeScript endpoints. It reports missing implementations,
+Java/Kotlin endpoints and NestJS, Express, and AWS Lambda (API Gateway) endpoints in
+TypeScript or JavaScript. It reports missing implementations,
 undocumented endpoints, and HTTP method mismatches, helps you fix them, and shows
 every operation's status at a glance. Analysis runs locally; nothing is uploaded.
 
@@ -20,7 +21,13 @@ Problems panel.
   classes (including openapi-generator interface-only and delegate projects),
   constant paths, `${...}` placeholders from `application.properties` /
   `application.yml`, and OpenAPI `servers` base paths aligned with the servlet
-  context path. NestJS controllers are supported too.
+  context path.
+- **Reads TypeScript and JavaScript services**: NestJS controllers, Express
+  applications and routers mounted across files, and AWS Lambda route maps and
+  `switch` dispatch on `event.routeKey`, including alias maps for legacy routes.
+  Routing it cannot read is shown as an analysis limitation, never as a false missing
+  implementation. See the
+  [framework guide](https://stackblender.com/openapiguard/docs/vscode/frameworks).
 - **Reports drift on both sides** as diagnostics, with per-rule severity and
   suppression.
 - **Fixes drift in one step** with quick fixes (Ctrl/Cmd+.): add an undocumented
@@ -59,4 +66,4 @@ targets desktop VS Code 1.96.0 and later.
 - [Release status](../release-status.md)
 - [Privacy](../privacy.md)
 
-The commands and settings in these pages were verified for version 0.3.2.
+The commands and settings in these pages were verified for version 0.4.1.

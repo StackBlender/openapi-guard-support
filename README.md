@@ -1,7 +1,8 @@
 # StackBlender OpenAPI Guard
 
-OpenAPI Guard keeps OpenAPI contracts synchronized with Spring Boot Java/Kotlin
-and NestJS TypeScript implementations by reporting endpoint-level drift.
+OpenAPI Guard keeps OpenAPI contracts synchronized with Spring Boot Java/Kotlin,
+NestJS, Express, and AWS Lambda (API Gateway) implementations, in TypeScript or
+JavaScript, by reporting endpoint-level drift.
 
 This is the public documentation, examples, feedback, and support repository. It is not the source repository for the separately licensed, proprietary OpenAPI Guard products.
 
@@ -10,8 +11,8 @@ This is the public documentation, examples, feedback, and support repository. It
 | Product                  | Status                                                                                                                  | Documentation                                         | Issues                                                                                                                |
 | ------------------------ | ----------------------------------------------------------------------------------------------------------------------- | ----------------------------------------------------- | --------------------------------------------------------------------------------------------------------------------- |
 | VS Code extension        | [Released on Visual Studio Marketplace](https://marketplace.visualstudio.com/items?itemName=StackBlender.openapi-guard) | [VS Code docs](docs/vscode/README.md)                 | [VS Code bug form](https://github.com/StackBlender/openapi-guard-support/issues/new?template=vscode-bug.yml)          |
-| IntelliJ Platform plugin | [Released on JetBrains Marketplace](https://plugins.jetbrains.com/plugin/34193-openapi-guard) (version 0.3.0)                    | [IntelliJ Platform docs](docs/intellij/README.md)     | [IntelliJ bug form](https://github.com/StackBlender/openapi-guard-support/issues/new?template=intellij-bug.yml)                                                              |
-| CLI                      | [Version 0.3.2 released on npm](https://www.npmjs.com/package/@stackblender/openapi-guard)                               | [CLI docs](docs/cli/README.md)                        | [CLI/MCP bug form](https://github.com/StackBlender/openapi-guard-support/issues/new?template=cli-mcp-bug.yml)         |
+| IntelliJ Platform plugin | [Released on JetBrains Marketplace](https://plugins.jetbrains.com/plugin/34193-openapi-guard) (version 0.4.1)                    | [IntelliJ Platform docs](docs/intellij/README.md)     | [IntelliJ bug form](https://github.com/StackBlender/openapi-guard-support/issues/new?template=intellij-bug.yml)                                                              |
+| CLI                      | [Version 0.4.1 released on npm](https://www.npmjs.com/package/@stackblender/openapi-guard)                               | [CLI docs](docs/cli/README.md)                        | [CLI/MCP bug form](https://github.com/StackBlender/openapi-guard-support/issues/new?template=cli-mcp-bug.yml)         |
 | MCP adapter              | Included in the [public npm package](https://www.npmjs.com/package/@stackblender/openapi-guard)                          | [MCP docs](docs/mcp/README.md)                        | [CLI/MCP bug form](https://github.com/StackBlender/openapi-guard-support/issues/new?template=cli-mcp-bug.yml)         |
 
 Install [OpenAPI Guard](https://marketplace.visualstudio.com/items?itemName=StackBlender.openapi-guard) from Visual Studio Marketplace, or [OpenAPI Guard for IntelliJ IDEA](https://plugins.jetbrains.com/plugin/34193-openapi-guard) from JetBrains Marketplace. Product pages and documentation: [stackblender.com/openapiguard](https://stackblender.com/openapiguard).
@@ -19,7 +20,7 @@ Install [OpenAPI Guard](https://marketplace.visualstudio.com/items?itemName=Stac
 Run the CLI without installing it globally:
 
 ```sh
-npx --yes @stackblender/openapi-guard@0.3.2 .
+npx --yes @stackblender/openapi-guard@0.4.1 .
 ```
 
 ## Current checks
@@ -27,8 +28,11 @@ npx --yes @stackblender/openapi-guard@0.3.2 .
 OpenAPI Guard's endpoint-level analysis detects:
 
 - OpenAPI operations with no supported implementation
-- Spring or NestJS endpoints absent from the OpenAPI contract
+- implemented endpoints absent from the OpenAPI contract
 - HTTP method mismatches for otherwise matching routes
+
+Routing it cannot read, such as a computed path or a custom router, is reported as an
+analysis limitation instead of as missing implementations.
 
 Analysis is local-first. OpenAPI Guard does not upload source code, OpenAPI
 specifications, diagnostics, or repository metadata for analysis. See the

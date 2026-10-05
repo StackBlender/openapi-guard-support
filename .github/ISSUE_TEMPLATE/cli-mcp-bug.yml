@@ -49,8 +49,8 @@ body:
   - type: input
     id: spring-version
     attributes:
-      label: Spring Boot version
-      description: Enter “Not relevant” if the problem occurs before project analysis.
+      label: Framework and version
+      description: For example Spring Boot 3.3, NestJS 10, Express 5, or AWS Lambda (API Gateway HTTP API). Enter “Not relevant” if the problem occurs before project analysis.
     validations:
       required: true
   - type: dropdown

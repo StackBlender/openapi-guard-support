@@ -4,8 +4,12 @@ The commands and settings below apply to the current Marketplace release.
 
 ## No diagnostics appear
 
-- Confirm the workspace contains an OpenAPI 3.x document and supported Spring Boot
-  Java/Kotlin or NestJS TypeScript controllers.
+- Confirm the workspace contains an OpenAPI 3.x document and a supported
+  implementation: Spring Boot (Java/Kotlin), NestJS, Express, or AWS Lambda
+  (TypeScript or JavaScript).
+- If operations show as _Could not verify_, an `analysis-limitation` diagnostic marks
+  the code OpenAPI Guard could not read; for a custom Lambda router, declare its
+  routes in `openapi-guard.routes.json`.
 - Confirm `stackblender.openApiGuard.enabled` is `true`.
 - Run **OpenAPI Guard: Select OpenAPI Specification** when discovery cannot choose the intended contract.
 - Check `stackblender.openApiGuard.include` and `stackblender.openApiGuard.exclude` if controllers are outside conventional paths.

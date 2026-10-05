@@ -10,8 +10,8 @@ code --install-extension StackBlender.openapi-guard
 
 After installation:
 
-1. Open a Spring Boot Java/Kotlin or NestJS TypeScript workspace containing an
-   OpenAPI 3.x document.
+1. Open a Spring Boot (Java/Kotlin), NestJS, Express, or AWS Lambda (TypeScript or
+   JavaScript) workspace containing an OpenAPI 3.x document.
 2. Allow automatic analysis to run, or invoke **OpenAPI Guard: Analyze Current File**.
 3. Read the first-run summary, then open the Problems panel to review endpoint drift,
    or the **Operations** view in the OpenAPI Guard panel to see every operation's

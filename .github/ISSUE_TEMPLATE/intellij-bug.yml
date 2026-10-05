@@ -15,7 +15,7 @@ body:
     attributes:
       label: OpenAPI Guard plugin version
       description: Copy the version from Settings, Plugins, Installed.
-      placeholder: e.g. 0.3.0
+      placeholder: e.g. 0.4.1
     validations:
       required: true
   - type: dropdown
@@ -56,8 +56,8 @@ body:
   - type: input
     id: spring-version
     attributes:
-      label: Spring Boot version
-      description: Enter “Not relevant” if the problem occurs before project analysis.
+      label: Framework and version
+      description: For example Spring Boot 3.3, NestJS 10, Express 5, or AWS Lambda (API Gateway HTTP API). Enter “Not relevant” if the problem occurs before project analysis.
     validations:
       required: true
   - type: textarea

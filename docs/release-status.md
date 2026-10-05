@@ -1,20 +1,39 @@
 # Release status
 
-This page records current product behavior. It was last reviewed on September 25, 2026.
+This page records current product behavior. It was last reviewed on October 4, 2026.
 
-| Product or capability                                          | Status                                                                                                                                |
-| -------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------- |
-| OpenAPI Guard for VS Code                                      | Version 0.3.2 released on [Visual Studio Marketplace](https://marketplace.visualstudio.com/items?itemName=StackBlender.openapi-guard) |
-| Spring Java/Kotlin and NestJS TypeScript endpoint drift checks | Available in the released VS Code extension, CLI, and MCP adapter. The IntelliJ plugin checks Spring Java/Kotlin only              |
-| CLI                                                            | Version 0.3.2 released in [`@stackblender/openapi-guard`](https://www.npmjs.com/package/@stackblender/openapi-guard)                    |
-| Local MCP adapter                                              | Version 0.3.2 released in the same public npm package                                                                                  |
-| VS Code agent tool                                             | Included in the released VS Code extension                                                                                            |
-| IntelliJ Platform plugin                                       | Version 0.3.0 released on [JetBrains Marketplace](https://plugins.jetbrains.com/plugin/34193-openapi-guard); IntelliJ IDEA 2024.1 and later |
+| Product or capability             | Status                                                                                                                                      |
+| --------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------- |
+| OpenAPI Guard for VS Code         | Version 0.4.1 released on [Visual Studio Marketplace](https://marketplace.visualstudio.com/items?itemName=StackBlender.openapi-guard)       |
+| CLI                               | Version 0.4.1 released in [`@stackblender/openapi-guard`](https://www.npmjs.com/package/@stackblender/openapi-guard)                        |
+| Local MCP adapter                 | Version 0.4.1 released in the same public npm package                                                                                       |
+| VS Code agent tool                | Included in the released VS Code extension                                                                                                  |
+| IntelliJ Platform plugin          | Version 0.4.1 released on [JetBrains Marketplace](https://plugins.jetbrains.com/plugin/34193-openapi-guard); IntelliJ IDEA 2024.1 and later |
+| Spring Boot (Java and Kotlin)     | VS Code extension, CLI, MCP adapter, and IntelliJ plugin                                                                                    |
+| Express and AWS Lambda (TS or JS) | VS Code extension, CLI, MCP adapter, and IntelliJ plugin, since 0.4.0                                                                       |
+| NestJS (TS or JS)                 | VS Code extension, CLI, and MCP adapter                                                                                                     |
 
-Version 0.3.2 (VS Code and npm) is current. It has the same behavior as 0.3.0; 0.3.1
-added the 0.3.0 screenshots to the Marketplace page and 0.3.2 points the homepage and
-documentation links at stackblender.com and brings the CLI and MCP adapter to the 0.3
-line.
+Version 0.4.1 is current for every product. Version 0.4.0 added Express applications
+and routers and AWS Lambda (API Gateway HTTP API) route maps and `routeKey` dispatch,
+in TypeScript and JavaScript; `openapi-guard.routes.json` route manifests for custom
+routers; and analysis limitations, which report routing that cannot be read instead
+of reporting the operations it might serve as missing. In IntelliJ, inspection names
+no longer say "Spring" (suppression IDs are unchanged) and a fourth inspection marks
+analysis limitations. Version 0.4.1 skips TypeScript build output, resolves imports
+of build output to their sources, scopes legacy route aliases by their target's
+module, and no longer treats a `routeKey` copied into an object as dispatch; in
+IntelliJ, the Operations tool window counts analysis limitations in its summary.
+
+The VS Code 0.4.1 release VSIX passed 383 unit/process tests and 43 VS Code
+integration tests on Stable and VS Code 1.96.0; its SHA-256 is
+`aa1e59461f5e330ee48b3ec1f22dc59059c3d833c2c8651ba8c4685a7c828ea9`. The npm 0.4.1
+tarball's registry SHA-1 is `0bb8dd95dd092d4beb73ed510b5a120f60ce2ba7`. The IntelliJ
+0.4.1 plugin passed 253 tests and the JetBrains Plugin Verifier on IntelliJ IDEA
+2024.1 (the oldest supported build) and build 263.
+
+Version 0.3.2 (VS Code and npm) had the same behavior as 0.3.0; 0.3.1 added the 0.3.0
+screenshots to the Marketplace page and 0.3.2 pointed the homepage and documentation
+links at stackblender.com and brought the CLI and MCP adapter to the 0.3 line.
 
 Version 0.3.0 of the VS Code extension brings it to feature parity with the IntelliJ
 plugin 0.3.0: content-based multi-spec discovery, cross-file Spring inheritance,
