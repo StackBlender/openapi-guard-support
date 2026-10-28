@@ -1,5 +1,9 @@
 # Support
 
+OpenAPI Guard was deprecated on 2026-10-28. No further releases, fixes, or
+support are planned. New bug reports and feature requests are not being accepted.
+Reporting links below are historical reference only.
+
 Start with the relevant [product documentation](README.md#product-status) and troubleshooting guide. Please use only sanitized, intentionally public material in this repository.
 
 ## Where to ask

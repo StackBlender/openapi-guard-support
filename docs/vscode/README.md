@@ -1,5 +1,10 @@
 # OpenAPI Guard for VS Code
 
+> **Deprecated — 2026-10-28.** OpenAPI Guard is no longer maintained. No further
+> releases, fixes, or support are planned for the VS Code extension, IntelliJ
+> plugin, CLI, or MCP adapter. Existing artifacts and documentation are retained
+> for reference; their licensing is unchanged.
+
 > **Status: released.** Install [OpenAPI Guard](https://marketplace.visualstudio.com/items?itemName=StackBlender.openapi-guard) from Visual Studio Marketplace.
 
 OpenAPI Guard for VS Code compares OpenAPI 3.x operations with Spring Boot

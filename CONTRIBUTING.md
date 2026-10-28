@@ -1,5 +1,8 @@
 # Contributing
 
+OpenAPI Guard was deprecated on 2026-10-28. New contributions are not being
+accepted. The guidance below is retained as historical reference.
+
 Contributions to this public support repository may include documentation corrections, sanitized examples, minimal reproduction cases, and compatibility notes. Product implementation code is proprietary and is not accepted here.
 
 Before opening a pull request:

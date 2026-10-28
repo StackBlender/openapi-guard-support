@@ -1,5 +1,9 @@
 # Security policy
 
+OpenAPI Guard was deprecated on 2026-10-28. No versions are supported and no
+further security fixes are planned. Private disclosure guidance below is retained
+for confidentiality; no response or remediation is promised.
+
 Do not report vulnerabilities in a public issue, discussion, pull request, or reproduction repository.
 
 Use [GitHub private vulnerability reporting](https://github.com/StackBlender/openapi-guard-support/security/advisories/new) to contact the maintainers confidentially.

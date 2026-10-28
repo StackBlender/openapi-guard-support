@@ -1,5 +1,10 @@
 # OpenAPI Guard CLI
 
+> **Deprecated — 2026-10-28.** OpenAPI Guard is no longer maintained. No further
+> releases, fixes, or support are planned for the VS Code extension, IntelliJ
+> plugin, CLI, or MCP adapter. Existing artifacts and documentation are retained
+> for reference; their licensing is unchanged.
+
 > **Status: version 0.4.1 is available from [npm](https://www.npmjs.com/package/@stackblender/openapi-guard).**
 
 The local `openapi-guard` CLI provides the same endpoint analysis as the VS Code

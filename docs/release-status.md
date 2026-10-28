@@ -1,5 +1,10 @@
 # Release status
 
+> **Deprecated — 2026-10-28.** OpenAPI Guard is no longer maintained. No further
+> releases, fixes, or support are planned for the VS Code extension, IntelliJ
+> plugin, CLI, or MCP adapter. Existing artifacts and documentation are retained
+> for reference; their licensing is unchanged.
+
 This page records current product behavior. It was last reviewed on October 4, 2026.
 
 | Product or capability             | Status                                                                                                                                      |

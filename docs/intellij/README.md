@@ -1,5 +1,10 @@
 # OpenAPI Guard for IntelliJ Platform
 
+> **Deprecated — 2026-10-28.** OpenAPI Guard is no longer maintained. No further
+> releases, fixes, or support are planned for the VS Code extension, IntelliJ
+> plugin, CLI, or MCP adapter. Existing artifacts and documentation are retained
+> for reference; their licensing is unchanged.
+
 > **Status: released.** Install [OpenAPI Guard](https://plugins.jetbrains.com/plugin/34193-openapi-guard)
 > from JetBrains Marketplace, or from inside the IDE under Settings, Plugins, Marketplace.
 > The current version is 0.4.1. The plugin identifier is `com.stackblender.openapiguard`.

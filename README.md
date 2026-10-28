@@ -1,5 +1,15 @@
 # StackBlender OpenAPI Guard
 
+> **Deprecated — 2026-10-28.** OpenAPI Guard is no longer maintained. No further
+> releases, fixes, or support are planned for the VS Code extension, IntelliJ
+> plugin, CLI, or MCP adapter. Existing artifacts and documentation are retained
+> for reference; their licensing is unchanged.
+
+To stop using OpenAPI Guard, uninstall the editor plugin or extension, remove its
+CI steps and MCP server configuration, and uninstall `@stackblender/openapi-guard`
+if installed. Keep the OpenAPI specifications your applications need.
+The usage documentation below is retained for existing installations.
+
 OpenAPI Guard keeps OpenAPI contracts synchronized with Spring Boot Java/Kotlin,
 NestJS, Express, and AWS Lambda (API Gateway) implementations, in TypeScript or
 JavaScript, by reporting endpoint-level drift.
@@ -10,14 +20,14 @@ This is the public documentation, examples, feedback, and support repository. It
 
 | Product                  | Status                                                                                                                  | Documentation                                         | Issues                                                                                                                |
 | ------------------------ | ----------------------------------------------------------------------------------------------------------------------- | ----------------------------------------------------- | --------------------------------------------------------------------------------------------------------------------- |
-| VS Code extension        | [Released on Visual Studio Marketplace](https://marketplace.visualstudio.com/items?itemName=StackBlender.openapi-guard) | [VS Code docs](docs/vscode/README.md)                 | [VS Code bug form](https://github.com/StackBlender/openapi-guard-support/issues/new?template=vscode-bug.yml)          |
-| IntelliJ Platform plugin | [Released on JetBrains Marketplace](https://plugins.jetbrains.com/plugin/34193-openapi-guard) (version 0.4.1)                    | [IntelliJ Platform docs](docs/intellij/README.md)     | [IntelliJ bug form](https://github.com/StackBlender/openapi-guard-support/issues/new?template=intellij-bug.yml)                                                              |
-| CLI                      | [Version 0.4.1 released on npm](https://www.npmjs.com/package/@stackblender/openapi-guard)                               | [CLI docs](docs/cli/README.md)                        | [CLI/MCP bug form](https://github.com/StackBlender/openapi-guard-support/issues/new?template=cli-mcp-bug.yml)         |
-| MCP adapter              | Included in the [public npm package](https://www.npmjs.com/package/@stackblender/openapi-guard)                          | [MCP docs](docs/mcp/README.md)                        | [CLI/MCP bug form](https://github.com/StackBlender/openapi-guard-support/issues/new?template=cli-mcp-bug.yml)         |
+| VS Code extension        | [Deprecated; retained on Visual Studio Marketplace](https://marketplace.visualstudio.com/items?itemName=StackBlender.openapi-guard) | [VS Code docs](docs/vscode/README.md)                 | [VS Code bug form](https://github.com/StackBlender/openapi-guard-support/issues/new?template=vscode-bug.yml)          |
+| IntelliJ Platform plugin | [Deprecated; retained on JetBrains Marketplace](https://plugins.jetbrains.com/plugin/34193-openapi-guard) (version 0.4.1)                    | [IntelliJ Platform docs](docs/intellij/README.md)     | [IntelliJ bug form](https://github.com/StackBlender/openapi-guard-support/issues/new?template=intellij-bug.yml)                                                              |
+| CLI                      | [Deprecated; version 0.4.1 on npm](https://www.npmjs.com/package/@stackblender/openapi-guard)                               | [CLI docs](docs/cli/README.md)                        | [CLI/MCP bug form](https://github.com/StackBlender/openapi-guard-support/issues/new?template=cli-mcp-bug.yml)         |
+| MCP adapter              | Deprecated; included in the [public npm package](https://www.npmjs.com/package/@stackblender/openapi-guard)                          | [MCP docs](docs/mcp/README.md)                        | [CLI/MCP bug form](https://github.com/StackBlender/openapi-guard-support/issues/new?template=cli-mcp-bug.yml)         |
 
-Install [OpenAPI Guard](https://marketplace.visualstudio.com/items?itemName=StackBlender.openapi-guard) from Visual Studio Marketplace, or [OpenAPI Guard for IntelliJ IDEA](https://plugins.jetbrains.com/plugin/34193-openapi-guard) from JetBrains Marketplace. Product pages and documentation: [stackblender.com/openapiguard](https://stackblender.com/openapiguard).
+Historical listings: [OpenAPI Guard](https://marketplace.visualstudio.com/items?itemName=StackBlender.openapi-guard) from Visual Studio Marketplace, or [OpenAPI Guard for IntelliJ IDEA](https://plugins.jetbrains.com/plugin/34193-openapi-guard) from JetBrains Marketplace. Product pages and documentation: [stackblender.com/openapiguard](https://stackblender.com/openapiguard).
 
-Run the CLI without installing it globally:
+Historical CLI invocation (not recommended for new adoption):
 
 ```sh
 npx --yes @stackblender/openapi-guard@0.4.1 .
